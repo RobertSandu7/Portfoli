@@ -1,0 +1,122 @@
+*{
+    border-radius: 10px;
+}
+body{
+background-image: url("Fotos2/munyanyo.jpg");background-size: 100%; background-attachment: fixed; 
+text-align: center; margin-top: 0%; margin-bottom: 10%; margin-left: 5%; margin-right: 5%;
+}
+#gym, #introduction, #peu, #titol, #excursio{
+    box-shadow: 5px 5px 10px black;
+}
+#gym, #introduction, #peu, #Gallery, #excursio{
+background-color: rgba(132, 211, 214, 0.598);
+}
+#introduction{
+font-family:Arial, serif, sans-serif ; font-size: 20px;
+}
+#gym{
+font-family:Arial, serif, sans-serif ; font-size: 20px;
+}
+#25cosas{
+font-family:fantasy;
+}
+#excursio{
+font-family:Arial, serif, sans-serif ; font-size: 20px;
+}
+.tt1{
+font-family: Arial, Helvetica, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size:200%;
+background: linear-gradient(to right, rgb(35, 45, 185), rgb(164, 75, 236));
+}
+.tt{
+font-family:fantasy;
+font-size: 150%;
+background: linear-gradient(to right, rgb(73, 233, 212), rgb(57, 59, 224));
+}
+.titol2{
+font-family:'Courier New', Courier, monospace;
+}
+#indexflex{
+display:flex;
+flex-direction: column;
+background: linear-gradient(to top, rgb(17, 32, 170), rgb(18, 98, 136));
+padding: 30px;
+margin: 15px;
+width: 1fr; height: 10%;
+justify-content:flex-start;
+align-items:center;
+box-shadow: 5px 5px 10px black;
+position: sticky;
+top: 60px;
+font-size: 24px;
+}
+#fotos table{
+text-align: center;
+}
+#fotos{
+display: flex;
+flex-wrap:wrap;
+padding: 5px;
+flex-direction: row;
+justify-content: center;
+}   
+.peu {
+    text-align: center;
+    padding: 15px;
+    background-color: #2c3e50;
+    color: white;
+}
+#titol{grid-area: titol;
+    background: linear-gradient(to right, rgb(248, 60, 185), rgb(223, 67, 67));
+    }
+    #cos{grid-area: cos;}
+    #index{grid-area: index;
+    height: 70%;}
+    #peu{grid-area: peu;
+    }
+    #excursio{grid-area: excursio;
+    }
+    #grid{
+    display: grid;
+    grid-template-areas:
+        "titol titol index"
+        "cos cos index"
+        "cos cos index"
+        "excursio excursio index"
+        "peu peu peu";
+
+        grid-template-columns: 1fr 2fr 2fr;
+        gap: 10px;
+        
+        }
+
+        
+
+        #benvingut {
+            position: sticky;
+            top: 0;
+            background: linear-gradient(to right, rgba(38, 163, 115, 0.733), rgba(68, 37, 143, 0.822));
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 24px;
+            z-index: 10;
+        }
+        
+    
+@media (max-width: 800px) { 
+#Gallery{
+    flex-direction: column;
+}
+#grid{
+    grid-template-areas:
+    "titol"
+    "index"
+    "cos"
+    "excursio"
+    "peu";
+}
+#index{
+    height: 70%;
+}
+}
